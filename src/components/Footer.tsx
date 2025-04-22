@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
               <p className="flex items-center">
                 <Phone size={20} className="mr-2" />
                 <a href="https://wa.me/447897" className="hover:text-orange-400 transition-colors">
-                  WhatsApp: +44 789 76
+                  WhatsApp: +44 789 76 323 94 52
                 </a>
               </p>
               <p>
@@ -94,6 +94,12 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm">
           <p>&copy; {new Date().getFullYear()} Game FOOD 269. {t('All rights reserved.', 'Tous droits réservés.')}</p>
+          <p className="mt-2">
+            {t('Designed and developed by', 'Conçu et développé par   ')} 
+            <a href="https://soiby.fr" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:underline">
+              SOIBY
+            </a>
+          </p>
         </div>
       </div>
     </footer>

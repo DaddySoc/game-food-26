@@ -119,18 +119,33 @@ const CartPage: React.FC = () => {
                 
                 <div className="flex justify-between mb-6">
                   <span className="text-lg font-bold">{t('Total', 'Total')}</span>
-                  <span className="text-lg font-bold text-orange-500">€{total.toFixed(2)}</span>
+                  <span className="text-lg font-bold">€{total.toFixed(2)}</span>
                 </div>
-                
-                {!isCheckingOut ? (
-                  <button 
-                    onClick={() => setIsCheckingOut(true)}
-                    className="w-full bg-orange-500 text-white px-6 py-3 rounded-md font-medium hover:bg-orange-600 transition-colors flex items-center justify-center"
-                  >
-                    <CreditCard className="mr-2" size={20} />
-                    {t('Proceed to Checkout', 'Procéder au Paiement')}
-                  </button>
-                ) : (
+
+                {/* Shipping Information */}
+                <div className="bg-orange-50 p-4 rounded-lg mb-6">
+                  <p className="font-bold text-orange-700 mb-2">
+                    {total >= 10 
+                      ? t('Free delivery!', 'Livraison gratuite !') 
+                      : t('Delivery fee: €0.99 for orders under €10', ' Livraison gratuite pour les commandes de plus  de 10€')}
+                  </p>
+                  <p className="text-sm text-gray-600">
+                    {t('Free delivery for all orders of €10 or more', 'Livraison gratuite pour toute commande de 10€ ou plus')}
+                  </p>
+                  <p className="text-sm text-gray-600 mt-2">
+                    {t('Delivery zones:', 'Frais de livraison: 0,99€ Zones de livraison:')} Mâle, Ouropveni, Chindini, Simaboini, Dzahadjou, Koibani, Noumadzaha
+                  </p>
+                </div>
+
+                <button 
+                  onClick={() => setIsCheckingOut(true)}
+                  className="w-full bg-orange-500 text-white px-6 py-3 rounded-md font-medium hover:bg-orange-600 transition-colors flex items-center justify-center"
+                >
+                  <CreditCard className="mr-2" size={20} />
+                  {t('Proceed to Checkout', 'Procéder au Paiement')}
+                </button>
+
+                {isCheckingOut && (
                   <form onSubmit={handleCheckout} className="space-y-4">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
