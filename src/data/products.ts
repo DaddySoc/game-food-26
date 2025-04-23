@@ -46,9 +46,9 @@ export const products: Product[] = [
     name: 'Chicken Sandwich',
     nameFr: 'Sandwich Poulet',
     description: 'Marinated chicken strips, salad, and homemade sauce in good bread.',
-    descriptionFr: 'Émincé de poulet mariné, salade, sauce maison, le tout dans un bon pain.',
+    descriptionFr: 'Lanières de poulet mariné, salade et sauce maison dans un bon pain.',
     price: 2.40,
-    image: 'https://images.pexels.com/photos/5947101/pexels-photo-5947101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg',
     category: 'sandwich'
   },
   {
@@ -67,8 +67,28 @@ export const products: Product[] = [
     nameFr: 'Coca Cola',
     description: 'Ice-cold Coca Cola to accompany your meal.',
     descriptionFr: 'Coca Cola bien frais pour accompagner votre repas.',
-    price: 2.49,
+    price: 1.49,
     image: 'https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    category: 'drink'
+  },
+  {
+    id: '9',
+    name: 'Fanta',
+    nameFr: 'Fanta',
+    description: 'Refreshing orange flavored soda.',
+    descriptionFr: 'Soda rafraîchissant à l\'orange.',
+    price: 1.49,
+    image: 'https://images.pexels.com/photos/96974/pexels-photo-96974.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    category: 'drink'
+  },
+  {
+    id: '10',
+    name: 'Sprite Berry',
+    nameFr: 'Sprite Berry',
+    description: 'Sparkling lemon-lime soda with berry flavor.',
+    descriptionFr: 'Soda pétillant citron-vert avec saveur baies.',
+    price: 1.49,
+    image: 'https://images.pexels.com/photos/50593/coca-cola-cold-drink-soft-drink-coke-50593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     category: 'drink'
   }
 ];

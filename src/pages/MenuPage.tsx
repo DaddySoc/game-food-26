@@ -12,6 +12,7 @@ const MenuPage: React.FC = () => {
   const categories = [
     { id: 'all', label: t('All', 'Tous') },
     { id: 'sandwich', label: t('Sandwiches', 'Sandwichs') },
+    { id: 'drink', label: t('Drinks', 'Boissons') },
     { id: 'dessert', label: t('Desserts', 'Desserts') }
   ];
   
