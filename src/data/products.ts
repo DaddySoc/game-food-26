@@ -63,12 +63,12 @@ export const products: Product[] = [
   },
   {
     id: '7',
-    name: 'Coca-Cola',
-    nameFr: 'Coca-Cola',
-    description: 'A sweet touch to finish: fresh milkshake to enjoy on the spot.',
-    descriptionFr: 'Une touche sucrée pour finir : Coca-Cola frais à déguster sur place.',
-    price: 3.99,
-    image: 'https://images.pexels.com/photos/103566/pexels-photo-103566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    category: 'dessert'
+    name: 'Coca Cola',
+    nameFr: 'Coca Cola',
+    description: 'Ice-cold Coca Cola to accompany your meal.',
+    descriptionFr: 'Coca Cola bien frais pour accompagner votre repas.',
+    price: 2.49,
+    image: 'https://images.pexels.com/photos/2983100/pexels-photo-2983100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    category: 'drink'
   }
 ];
