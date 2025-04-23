@@ -54,11 +54,16 @@ export default {
             transform: 'translateY(-10px)',
           },
         },
+        'custom-bounce': {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(-5px)' },
+        }
       },
       animation: {
         'float-slow': 'float-slow 6s ease-in-out infinite',
         'float-medium': 'float-medium 5s ease-in-out infinite',
         'float-fast': 'float-fast 4s ease-in-out infinite',
+        'custom-bounce': 'custom-bounce 700ms ease-in-out',
       },
     },
   },
